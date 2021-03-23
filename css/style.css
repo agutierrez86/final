@@ -1,0 +1,270 @@
+
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+    padding-top: 35px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+.banner-area {
+	width: 100%;
+	height: 500px;
+	top: 100px;
+	background-image: url(../img/spy.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.banner-area h1 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.banner-area p{
+    padding-top: 8%;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+}
+
+
+.content-container {
+    display: grid;
+    grid-template-areas: 'left-content right-content';
+    width: 60%;
+    margin: auto;
+    grid-gap: 50px;
+    text-align: left;
+    padding-top: 100px;
+}
+
+h1, h2 
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+p {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+.titulo {
+    padding-top: 4em;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+
+
+.titulo {
+    padding-top: 0px;
+}
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-linkedin2 {
+	background: #a2c5e6;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+.carousel-dark .carousel-caption {
+    color: white;
+    background-color: black;}
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+        padding: 20px;
+        grid-gap: 40px;
+    }
+    .card{
+        background-color: #1c1b29;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    }
+    .container{
+        position: relative;
+        clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    }
+    img{
+        width: 80%;
+        display: block;
+        border-radius: 20px 20px 0 0;
+    }
+    .container:after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+        opacity: 0.7;
+    }
+    
+    
+    .details{
+        padding: 20px 10px;
+    }
+    .details>h3{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+        margin: 10px 0 15px 0;
+    }
+    .details>p{
+        color: #a0a0a0;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .details a{
+        text-decoration: none;
+    }
+
+    button{
+        padding: 0.8em; 
+        color: #fff; 
+        border: none; 
+        outline: none; 
+        font-size: 1.2rem;
+        font-family: 'Josefin sans', ;
+        background-color: hsl(143, 93%, 39%);
+        cursor: pointer;
+        margin-top: 1em; 
+    }
+    button:first-of-type:hover{
+        background-color: hsl(143, 98%, 30%);
+    }
+    button:last-of-type{
+        background-color: hsl(204, 93%, 39%) ;
+    }
+    button:last-of-type:hover{
+        background-color: hsl(204, 98%, 30%) ;
+    }
+    
+    button+button{
+        margin-left: 2rem; 
+    }
+   
+    footer p{
+        padding:0;
+        font-size: 0.8em;
+        color: hsla(0, 50%, 100%, 0.35);
+        margin: 1em 0;
+        font-size: 1rem;
+    }
+    footer ul{
+        list-style: none;
+        display: flex;
+        margin: 1em 0; 
+    }
+    footer ul li a{
+        padding: 1em; 
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.904);
+        transition: 100ms;
+    }
+    footer ul li a:hover{
+        color: var(--primary);
+    }
+    
+    footer{
+        width: 100%;
+        background: #180041;
+        color: #fff; 
+        display: grid;
+        place-items: center;
+        padding: 2em; 
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    /* Sticky Footer Styling */
+    
+    .sticky-footer{
+        position: sticky;
+        top: 100%;
+    }
+    
+        
